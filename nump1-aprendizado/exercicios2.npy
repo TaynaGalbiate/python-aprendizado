@@ -1,0 +1,23 @@
+#Resolvendo exercícios
+import numpy as np
+
+cartela_bingo = np.array([[15,9,2,14],
+                          [13,22,16,26],
+                          [5,18,3,1],
+                          [6,4,29,19]])
+qtd= cartela_bingo [:,1]
+
+#Selecione a segunda coluna
+print("Segunda coluna:\n", qtd)
+
+
+#Selecione apenas as primeiras 3 quantidades da segunda coluna
+print("\nTrês primeiras quantidades:\n", qtd [0:3])
+
+
+#Selecione as 2 últimas quantidades da segunda coluna
+print("\nDuas últimas quantidades:\n", qtd [-2:])
+
+
+#Organizando a terceira coluna:
+print("\nTerceira coluna:\n", np.sort(cartela_bingo [:, 3]))

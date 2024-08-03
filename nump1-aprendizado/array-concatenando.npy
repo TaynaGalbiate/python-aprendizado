@@ -1,0 +1,16 @@
+#Aprendizado sobre concatenação
+import numpy as np
+#Concatenando linhas
+
+arrv1 = np.random.randint(10, size=(4,2))
+arrv2 = np.array([["Peras", "Morango"]])
+
+print("Concatenando as linhas:\n", np.concatenate((arrv1, arrv2)))
+
+
+#concatenando colunas 
+arrv3 = np.random.randint(12, size=(3,3))
+arrv4 = np.array(["Uva", "Morango", "Laranja"]).reshape((3,1))
+print("\nConcatenando as colunas:\n", np.concatenate((arrv3, arrv4), axis=1))
+
+

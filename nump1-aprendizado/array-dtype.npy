@@ -1,0 +1,12 @@
+#Aprendendo os tipos de dados em um numpy array
+
+import numpy as np
+
+print (np.array ([5.4,6.7,2.1]).dtype) #dtype indica que é um float64
+
+print (np.array ([5,6,2]).dtype) #dtype indica que é int64
+
+print (np.array(["Hello", "oi", "Tayna"]).dtype) #dtype indica o nome dominante, com mais letras 
+
+x= np.array([3,4,2.1])
+print (x.astype(np.int32)) #convertendo para inteiro

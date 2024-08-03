@@ -1,0 +1,27 @@
+#Aprendendo sobre indexação sofisticada (fancy indexing) e máscara (mask)
+
+#Boolean mask - Retorna um array de verdadeiros e falsos
+
+#Fancy indexing - Retorna os valores do array quando passado a máscara
+
+#np.where - Retorna um array de indices e também cria uma matriz com base em se os elemntos correspondem ou não a uma condição.
+
+import numpy as np
+
+arr= np.array([1,2,3,4,5])
+mask= arr % 2==0
+print("Resultado 1:\n", mask)
+
+
+pessoas_idade= np.array([[1,22],[2,21],[3,27],[4,26]])
+mask_maior21 = pessoas_idade [:,1] > 21
+print("\nResultado 2:\n", pessoas_idade[mask_maior21])
+
+
+
+cartela_bingo = np.array([[15,9,2,14],
+                          [13,22,16,26],
+                          [5,18,3,1],
+                          [6,4,29,19]])
+
+print ("\nResultado 3:\n",np.where(cartela_bingo % 3 == 0, "Div3", cartela_bingo))

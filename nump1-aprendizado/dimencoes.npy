@@ -1,0 +1,11 @@
+import numpy as np
+
+cartela_bingo = np.array([[16,10,3,15],[14,23,17,27],[6,19,3,1],[10,4,18,19]])
+print("Segunda coluna:\n" ,cartela_bingo [:,1]) #Todos os números da coluna 1
+
+print("\nPrimeira linha:\n" , cartela_bingo [0]) #Todos os números da primeira linha
+
+print("\nOrganização das linhas:\n", np.sort(cartela_bingo)) #Organizou os números nas linhas
+
+print("\nOrganização das colunas:\n", np.sort(cartela_bingo, axis=0)) #Organizou os números nas colunas
+

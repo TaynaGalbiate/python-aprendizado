@@ -1,0 +1,23 @@
+#Resolvendo exercícios 
+
+import numpy as np 
+#Crie um array com 4 linhas e 3 colunas com valores aleatórios.
+print("Exercício 1: \n", np.random.random((4,3)))
+
+
+# Crie um array com 5 colunas e 10 linhas inicializados com zeros.
+print("\nExercício 2:\n", np.zeros((10,5)))
+
+
+# Crie um array com valores inteiros 3 linhas e 5 colunas com valores aleatórios
+print("\nExercício 3:\n",np.random.randint(10,30, size=(3,5)))
+
+
+#Reduzindo o array (5,7) a apenas uma dimensão
+arr = np.random.random ((5,7))
+print ("\nExercício 4:\n",arr.flatten())
+
+
+#Cartela de bingo com 12 números (4,3), os números variam de 1 e 30 e terá 10 participantes.
+bingo = np.random.randint(1, 31, size=(10, 4, 3)) #random.randint para colocar números aleatórios e inteiros, size é o tamanho
+print("\nExercício 5:\n",bingo)

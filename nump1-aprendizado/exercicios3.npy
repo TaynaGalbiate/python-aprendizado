@@ -1,0 +1,10 @@
+#Exercício
+
+import numpy as np
+
+bingo = np.array([[747,89,33,5],[623,123,32,13],[501,22,49,2],[116,101,42,2],[297,56,69,22],[613,64,27,7]])
+
+
+#Considere a profundeza em que a espécie foi encontrada, substitua valores que 60 com "Profundo"
+print(np.where(bingo[:,:] > 600, "Profundo", bingo [:,:]))
+
